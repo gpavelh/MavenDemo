@@ -7,7 +7,8 @@ public class App {
     private static final Logger LOG = LoggerFactory.getLogger(App.class);
 
     public String sayHi(String name) {
-        String str = String.format("Hi, ", name);
+        String str = String.format("Hi, " + name);
+        LOG.error(str);
         LOG.info(str);
         return str;
     }
