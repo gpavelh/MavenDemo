@@ -10,6 +10,8 @@ public class App {
         String str = String.format("Hi, " + name);
         LOG.error(str);
         LOG.info(str);
+        LOG.warn(str);
+        LOG.trace(str);
         return str;
     }
 }
